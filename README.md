@@ -11,25 +11,22 @@ http://localhost/dw3/index.php
 
 1. The full name of the developers (teammates of the team) and the contribution of each to the developed program.
 
-# Developer 1: Huynh Tu Anh Chau
+# Developer: Huynh Tu Anh Chau
 - Creation of user accounts or registration (Sign-Up).
 - Real-time validation of information entered by the user in the user account creation form with AJAX.
 - Login to an existing user account (Sign-In).
 - Disconnect from a connected user account (Sign-Out and Time-Out).
 
-# Developer 2: Queen Sarah Anumu Bih
 - Creation of the structure to create and exchange data with the database.
 - Changing the password of an existing user account.
 - Creation of the structure of web pages to display (e.g., head, header, nav, footer).
 - Display of the history of the results of all game rounds.
 
-# Developer 3: Hazel Clarisse Connolly
 - Management of several levels of a question/answer game which follow one another.
 - Abandoning a game in progress.
 - Customized display of features and addition of additional interactivity and attraction features.
 - About page and Interesting stuffs for navigation
 
-# Developer 4: Miguel Angel Cortes Porras
 - Creation and implementation of the GitHub account.
 - Creation of the structure of folders and files.
 - Management of several levels of a question/answer game which follow one another.
