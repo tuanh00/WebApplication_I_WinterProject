@@ -1,0 +1,211 @@
+.error-message {
+  color: #d8000c;
+  background-color: #ffd2d2;
+  border: 1px solid #d8000c;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.success-message {
+  color: #4f8a10;
+  background-color: #dffdcc;
+  border: 1px solid #4f8a10;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Navigation bar */
+nav {
+  background: #007bff;
+  color: #ffffff;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Logo specific styles */
+nav a img {
+  max-width: 50px; /* Adjust as needed for your specific logo size */
+  height: auto; /* Keeps the aspect ratio of the image */
+  border-radius: 10px;
+  border: 2px solid #007bff;
+  margin-right: 20px;
+}
+
+/* Sections */
+section {
+  padding: 20px 0;
+}
+
+.index-intro,
+.login-form,
+.signup-form,
+.reset-password-form {
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.index-categories {
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Forms & Buttons */
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  display: inline-block;
+  background: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Error & Success Messages */
+.error-message,
+.success-message {
+  color: #ff0000; /* Red for errors */
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f2dede;
+}
+
+.success-message {
+  color: #28a745; /* Green for success */
+  background-color: #d4edda;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .index-categories {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Adjusted CSS */
+.footer {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.wrapperfooter {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 15px;
+  vertical-align: top;
+  border: 2px solid #ffffff;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+/* succeeded all 6 lvls */
+.success-message-with-image {
+  display: flex;
+  align-items: center;
+}
+
+.success-message-with-image p {
+  margin-left: 10px; /* Add some space between the image and the text */
+  color: #4f8a10;
+  background-color: #dffdcc;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  /* Add any other styling you want for the text here */
+}
+
+.success-message-with-image img {
+  /* Adjust as needed for your specific gif size */
+  width: auto;
+  height: 50px; /* Example size, adjust as needed */
+}
