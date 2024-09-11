@@ -90,7 +90,7 @@ Players start with 6 lives. Wrong answers reduce lives, and they must complete a
    The interface for resetting the password, using AJAX for real-time validation.
 
 10. **Reset_Password_Screen(2).jpg**  
-   ![Reset_Password_Screen_2](img/Reset_Password_Screen_2.jpg)  
+   ![Reset_Password_Screen_2](img/Reset_Password_Screen (2).jpg)  
    Another view of the password reset screen, using AJAX.
 
 11. **Sign_Up_Screen.jpg**  
