@@ -1,75 +1,103 @@
-Game Name: Kids' World of Fun
+# Game Name: Kids' World of Fun
 
-Installation process:
-
+## Installation Process:
 - Download the game dw3.zip file. 
-- Unzip it in the 'www' folder inside the 'wamp64' folder in your local disk. The file path should be:
-C:\wamp64\www
-- Go to your browser and enter the following path: 
-http://localhost/dw3/index.php
-- In the home page, click the 'Sign up' at the header and proceed to create a new account. Once the account has been successfully created, you can log in and start the game. Feel free to explore the website.
+- Unzip it in the 'www' folder inside the 'wamp64' folder in your local disk. The file path should be:  
+  `C:\wamp64\www`
+- Go to your browser and enter the following path:  
+  `http://localhost/dw3/index.php`
+- On the homepage, click 'Sign up' at the header and proceed to create a new account. Once the account has been successfully created, you can log in and start the game. Feel free to explore the website.
 
-1. The full name of the developers (teammates of the team) and the contribution of each to the developed program.
+## Developers
+1. **Developer: Huynh Tu Anh Chau**
+   - Creation of user accounts or registration (Sign-Up) using AJAX to check real-time validation.
+   - Real-time validation of information entered by the user in the user account creation form with AJAX.
+   - Login to an existing user account (Sign-In) using AJAX for real-time input checking.
+   - Disconnect from a connected user account (Sign-Out and Time-Out).
+   - Creation of the structure to create and exchange data with the database.
+   - Changing the password of an existing user account using AJAX for real-time validation.
+   - Creation of the structure of web pages to display (e.g., head, header, nav, footer).
+   - Display of the history of the results of all game rounds, fetching data from MySQL.
 
-# Developer: Huynh Tu Anh Chau
-- Creation of user accounts or registration (Sign-Up).
-- Real-time validation of information entered by the user in the user account creation form with AJAX.
-- Login to an existing user account (Sign-In).
-- Disconnect from a connected user account (Sign-Out and Time-Out).
+2. **Contributions by Other Team Members:**
+   - Management of several levels of a question/answer game which follow one another.
+   - Abandoning a game in progress.
+   - Customized display of features and additional interactivity.
+   - Creation and implementation of the GitHub account.
+   - Creation of folder and file structures.
+   - Coordination of integration of different functionalities.
 
-- Creation of the structure to create and exchange data with the database.
-- Changing the password of an existing user account.
-- Creation of the structure of web pages to display (e.g., head, header, nav, footer).
-- Display of the history of the results of all game rounds.
-
-- Management of several levels of a question/answer game which follow one another.
-- Abandoning a game in progress.
-- Customized display of features and addition of additional interactivity and attraction features.
-- About page and Interesting stuffs for navigation
-
-- Creation and implementation of the GitHub account.
-- Creation of the structure of folders and files.
-- Management of several levels of a question/answer game which follow one another.
-- Coordination of the integration of different functionalities.
-
-2. The game's release date
-
+## Game's Release Date:
 April 12, 2024
 
-3. Enumeration and description of all features of the Website (see section 1), including additional features added
+## Features of the Website:
+- **User Account Management:** Registration, login, logout, and password reset with AJAX real-time validation.
+- **Real-time Form Validation:** AJAX for instant feedback in registration, login, and password reset forms.
+- **Multi-Level Game:** Six levels of increasing difficulty.
+- **Game History:** Fetches data from MySQL and displays user history.
+- **Database Interaction:** MySQL for storing/retrieving user and game data.
 
-User Account Management: Registration, login, logout, and password reset functionalities.
-Real-time Form Validation: Using AJAX for immediate feedback in the registration and login forms.
-Multi-Level Game: Various levels of question-and-answer gameplay, each with increasing difficulty.
-Game History: Retrieve data from MySQL and display the gaming history of all players.
-Database Interaction: Utilizes MySQL for storing and retrieving user and game data.
+## How the Game Works:
+Players start with 6 lives. Wrong answers reduce lives, and they must complete all 6 levels. If lives run out, the game is marked as 'gameover'. A win or incomplete status is saved based on the outcome. Game levels:
+- **Level 1:** Arrange 6 letters in ascending order.
+- **Level 2:** Arrange 6 letters in descending order.
+- **Level 3:** Arrange 6 numbers in ascending order.
+- **Level 4:** Arrange 6 numbers in descending order.
+- **Level 5:** Enter the smallest and largest letter in a set.
+- **Level 6:** Enter the smallest and largest number in a set.
 
-4. How the game works, such as the description of levels and the number of lives allocated.
+## Technical Information:
+- **Programming Language:** PHP 8.2.13
+- **Database Management System:** MySQL 8.2.0
+- **Other:** AJAX, JavaScript, HTML, CSS
 
-The player starts with 6 lives. Every time the player submits a wrong answer in any level of the game, one life is reduced. Once the player has used all the lives and hasn't succeeded all 6 levels, a message will be displayed and the player will be prompted to try again. This game match will be saved as 'gameover'. If the player successfully wins the game, a message will be displayed and the player can choose to play again. This game match will be saved as 'win'. If the player chooses to abandon the game, it will be saved as 'incomplete' if they still have remaining lives.
+## Screenshot Illustration (Stored in the 'project_images' folder):
 
-# Level 1: Arrange 6 letters in ascending order
-The player will be given 6 random letters, in which they have to arrange it in ascending order by seperating each letter in a space or comma.
+1. **About_Screen.jpg**  
+   ![About_Screen](img/About_Screen.jpg)  
+   Displays the 'About' page of the game.
 
-# Level 2: Arrange 6 letters in descending order
-The player will be given 6 random letters, in which they have to arrange it in descending order by seperating each letter in a space or comma.
+2. **After_Succeed_Reset.jpg**  
+   ![After_Succeed_Reset](img/After_Succeed_Reset.jpg)  
+   Message showing successful password reset.
 
-# Level 3: Arrange 6 numbers in ascending order
-The player will be given 6 random numbers, in which they have to arrange it in ascending order by seperating each number in a space or comma.
+3. **Gaming_History.jpg**  
+   ![Gaming_History](img/Gaming_History.jpg)  
+   Shows the game history of all users, fetching data from MySQL.
 
-# Level 4: Arrange 6 numbers in descending order
-The player will be given 6 random numbers, in which they have to arrange it in descending order by seperating each number in a space or comma.
+4. **Home_Screen.jpg**  
+   ![Home_Screen](img/Home_Screen.jpg)  
+   The home screen with the welcome message and game mascot.
 
-# Level 5: Write only the smallest letter and the largest letter in a set of 6 letters
-The player will be given 6 random letters, in which they have to enter only the smallest and the largest letter and seperate it in a space or comma.
+5. **Login_Screen.jpg**  
+   ![Login_Screen](img/Login_Screen.jpg)  
+   The login screen, which uses AJAX for real-time validation.
 
-# Level 6: Write only the smallest number and the largest number in a set of 6 numbers
-The player will be given 6 random numbers, in which they have to enter only the smallest and the largest number and seperate it in a space or comma.
+6. **Lost_The_Game.jpg**  
+   ![Lost_The_Game](img/Lost_The_Game.jpg)  
+   Message indicating the player has lost the game.
 
-The letters and numbers in each game are randomly generated. With a quantity of 6, the letters can vary from a to z and the numbers can vary from 0 to 100.
+7. **Msg_Go_To_Next_Round.jpg**  
+   ![Msg_Go_To_Next_Round](img/Msg_Go_To_Next_Round.jpg)  
+   Notification of completing a level and moving to the next.
 
-5. Any other relevant technical information on the program developed, including the programming languages and database management system used, their version and other relevant information.
+8. **Msg_Wrong_Answer.jpg**  
+   ![Msg_Wrong_Answer](img/Msg_Wrong_Answer.jpg)  
+   Message showing a wrong answer during gameplay.
 
-Programming language used: PHP 8.2.13
-Database Management System: MySQL 8.2.0
-Other: AJAX, JavaScript, HTML, CSS
+9. **Reset_Password_Screen.jpg**  
+   ![Reset_Password_Screen](img/Reset_Password_Screen.jpg)  
+   The interface for resetting the password, using AJAX for real-time validation.
+
+10. **Reset_Password_Screen(2).jpg**  
+   ![Reset_Password_Screen_2](img/Reset_Password_Screen_2.jpg)  
+   Another view of the password reset screen, using AJAX.
+
+11. **Sign_Up_Screen.jpg**  
+   ![Sign_Up_Screen](img/Sign_Up_Screen.jpg)  
+   The sign-up page, using AJAX for real-time input checking.
+
+12. **Won_The_Game_Screen.jpg**  
+   ![Won_The_Game_Screen](img/Won_The_Game_Screen.jpg)  
+   Message indicating the player has won the game.
+
